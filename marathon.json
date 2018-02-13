@@ -1,0 +1,14 @@
+{
+  "id": "zipkin-service-demo-one",
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "namanmehta/zipkin-service-one:1.0",
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 8082, "hostPort": 0 }
+      ]
+    },
+    "volumes": []
+  }
+}
